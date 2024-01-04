@@ -1,0 +1,177 @@
+/* .App{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+  background: url('../src/assets/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* 
+.heroSection{
+
+  height: 100vh;
+  scroll-snap-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(6, 6, 6, 0.599);
+
+}
+
+.contactSection{
+  margin: 0;
+
+  height: 100vh;
+  scroll-snap-align: center;
+} */
+
+/* .aboutSection{
+  margin: 0;
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rgba(255, 255, 255, 0.947);
+  color: black;
+  
+} */
+/* 
+.workSection{
+  margin: 0;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.navigationSection{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+.mainContent{
+  width: 1024px;
+  font-family: 'Fredoka One', cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftContent{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.leftContent ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.leftContent ul{
+  display: flex;
+  align-items: center;
+}
+.rightContent button{
+  width: 100px;
+  padding: 10px;
+  color: white;
+  background-color: transparent;
+  border-radius: 7px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.container{
+  height: 100vh;
+  scroll-snap-align: center;
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+}
+.subImageString{
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  gap: 10px;
+}
+
+h2.mr-2{
+  color: rgb(232, 247, 229);
+}
+
+h1{
+  font-size: 68px;
+  margin-bottom: 0;
+}
+
+.headLeft{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+.headLeft p{
+  font-size: 24px;
+  color: rgb(126, 213, 184);
+  margin-bottom: 13px;
+  margin-top: 0;
+
+}
+.headLeft button{
+  background-color: rgb(25, 94, 117);
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 13px;
+  border: none;
+  font-weight: 600;
+  width:130px;
+  color: white;
+}
+
+.headRight{
+  position: relative;
+  flex:3;  
+}
+.hugeImage{
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  animation: animate 2s infinite ease alternate;
+}
+@keyframes animate {
+  to{
+    transform:translateY(30px);
+  } 
+}
+
+.aboutRight{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+
+.aboutLeft{
+  position: relative;
+  flex:3; 
+}
+
+.aboutBos{
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+} */
