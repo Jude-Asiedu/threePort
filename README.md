@@ -54,9 +54,9 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🌐 Connect with Me
 - [Portfolio Website](https://www.your-portfolio-website.com)
-- [LinkedIn](https://www.linkedin.com/in/your-name)
-- [GitHub](https://github.com/your-username)
-- [Twitter](https://twitter.com/your-twitter-handle)
+- [LinkedIn](https://www.linkedin.com/in/jude-asiedu-231b9b144)
+- [GitHub](https://github.com/Jude-Asiedu)
+<!-- - [Twitter](https://twitter.com/your-twitter-handle) -->
 
 Feel free to reach out, connect, and let's create some amazing things together! 🚀
 
