@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navbar from './layout/Navbar'
-
+import Sphere from './modelShapes/Sphere'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls} from '@react-three/drei'
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align:center; 
@@ -33,8 +35,8 @@ position:relative;
 `
 
 const Img = styled.img`
-  width:800px;
-  height:600px;
+  width:700px;
+  height:500px;
   object-fit:contain;
   position:absolute;
   margin:auto;
@@ -42,10 +44,10 @@ const Img = styled.img`
   bottom:0;
   left:0;
   right:0;
-  animation: animate 2s infinite ease alternate;
+  animation: animate 1.8s infinite ease alternate;
    @keyframes animate{
     to{
-      transform:translateY(25px)
+      transform:translateY(20px)
     }
 
    }
@@ -90,6 +92,12 @@ const Hero = () => {
         </Left>
         <Right>
           {/* 3D Models bug*/}
+          <Canvas>
+          <OrbitControls enableZoom={false} autoRotate/>
+          <ambientLight intensity={2.2} />
+          <directionalLight position={[3,2,1]} />
+            <Sphere/>
+          </Canvas>
           <Img src="./img/buggy.png"/>
         </Right>
       </Container>

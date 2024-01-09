@@ -1,5 +1,11 @@
 import React from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
+import ModelWeb from './modelShapes/modelWeb'
+import ModelDevpt from './modelShapes/modelDevpt'
+import ModelTroubleShooting from './modelShapes/modelTroubleShooting'
+import ModelDefault from './modelShapes/modelDefault'
+import ModelPayments from './modelShapes/modelPayments'
 
 
 const data = [
@@ -15,6 +21,7 @@ const Section = styled.div`
   scroll-snap-align:center;
   display:flex;
   justify-content:center;
+  position: relative;
 `
 
 const Container = styled.div`
@@ -72,15 +79,25 @@ position:relative;
 `
 
 const Works = () => {
+
+  const [work,setWork] = useState("Web Design");
+
   return (
     <Section >
          <Container> 
           <Left>
             <List> 
-                  {data.map((items) => (  <ListItem key={items} text={items} > {items}</ListItem>))}
+                  {data.map((items) => (  <ListItem key={items} text={items} onClick={()=>setWork(items)} > {items}</ListItem>))}
             </List>
           </Left>
-          <Right></Right>
+          <Right>
+            {
+              work  === "Web Design" ? (<ModelWeb/>) :
+              work  === "Development" ? (<ModelDevpt/>):
+              work  === "Payments" ? (<ModelPayments/>):
+              work  === "Troubleshooting" ?  (<ModelTroubleShooting/>) : (<ModelDefault/>)
+            }
+          </Right>
      </Container>
    </Section>
   )

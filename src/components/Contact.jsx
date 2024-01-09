@@ -122,7 +122,7 @@ const Contact = () => {
     }, (error) => { setSucces(false); console.log(error.false);
     })
   }
-  
+
   return (
     <Section >       
       <Container>
