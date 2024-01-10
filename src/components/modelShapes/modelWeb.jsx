@@ -22,7 +22,7 @@ const ModelWeb = () => {
   return (
     <>
    <Canvas>
-    <Stage environment="studio" intensity={2.3}>
+    <Stage environment="night" intensity={2.3}>
         <GameModel/>
     </Stage>
     <OrbitControls enableZoom={false} />
