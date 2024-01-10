@@ -10,7 +10,7 @@ const ModelDefault = () => {
     <Stage environment="city" intensity={5.3}>
         <EuthModel/>
     </Stage>
-    <OrbitControls enableZoom={false} />
+    <OrbitControls enableZoom={false}  autoRotate autoRotateSpeed={14}/>
     </Canvas>
     </>
   )

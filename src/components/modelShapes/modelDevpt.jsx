@@ -7,10 +7,10 @@ const ModelDevpt = () => {
   return (
    <>
     <Canvas>
-    <Stage environment="night" intensity={0.3}>
+    <Stage environment="night" intensity={4.3}>
         <Model/>
     </Stage>
-    <OrbitControls enableZoom={false} />
+    <OrbitControls enableZoom={false}  autoRotate/>
     </Canvas>
    </>
   )

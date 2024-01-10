@@ -10,7 +10,7 @@ const ModelPayments = () => {
     <Stage environment="city" intensity={3.3}>
         <CashModel/>
     </Stage>
-    <OrbitControls enableZoom={false} />
+    <OrbitControls enableZoom={false}  autoRotate />
     </Canvas>
     </>
   )

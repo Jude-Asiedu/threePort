@@ -9,13 +9,23 @@ Title: Biohazard logo
 */
 
 import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { PerspectiveCamera, RenderTexture, useGLTF } from '@react-three/drei'
 
 export default function BioModel(props) {
   const { nodes, materials } = useGLTF('/biohard-transformed.glb')
   return (
-    <group {...props}  dispose={null}>
-      <mesh geometry={nodes.Object_2.geometry} material={materials.material_0} rotation={[-Math.PI / 2, 0, 1]}  />
+    <group {...props}  dispose={null} >
+      
+      <mesh geometry={nodes.Object_2.geometry} material={materials.material_0} rotation={[-Math.PI / 2, 0, 1]}>
+      <meshStandardMaterial >
+      <RenderTexture attach="map">
+        <PerspectiveCamera  makeDefault position={[0,0,5]}/>
+        <color attach="background" args={["#ef0b0b"]}/>
+        </RenderTexture>
+        </meshStandardMaterial>
+
+        
+        </mesh>
     </group>
   )
 }

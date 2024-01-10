@@ -6,11 +6,11 @@ import BioModel from './imports/Biohard'
 const ModelTroubleShooting = () => {
   return (
    
-    <Canvas>
-    <Stage environment="night" intensity={1.3}>
+    <Canvas  >
+    <Stage environment="sunset" intensity={1.3}>
         <BioModel/>
     </Stage>
-    <OrbitControls enableZoom={false} />
+    <OrbitControls enableZoom={false} autoRotate />
     </Canvas>
    
   )

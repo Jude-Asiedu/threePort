@@ -9,13 +9,19 @@ Title: Ethereum 3D logo
 */
 
 import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { RenderTexture, useGLTF } from '@react-three/drei'
 
 export default function EuthModel(props) {
   const { nodes, materials } = useGLTF('/euth_logo-transformed.glb')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Object_2.geometry} material={materials['default']} rotation={[-Math.PI / 2, 0, 0]} />
+      <mesh geometry={nodes.Object_2.geometry} material={materials['default']} rotation={[-Math.PI / 2, 0, 0]}>
+      <meshStandardMaterial >
+      <RenderTexture attach="map">
+        <color attach="background" args={["#054558"]}/>
+        </RenderTexture>
+        </meshStandardMaterial>
+        </mesh>
     </group>
   )
 }
