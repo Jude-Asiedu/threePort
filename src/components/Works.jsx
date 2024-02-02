@@ -28,15 +28,25 @@ const Container = styled.div`
   width:1000px;
   display:flex;
   justify-content:space-between;
+  @media only screen and (max-width:768px) {
+   width:100%;
+   flex-direction:column;
+  }
 
 `
 const Left = styled.div`
-  flex:1;
+  flex:2;
   display:flex;
   align-items:center;
+
+  @media only screen and (max-width:768px) {
+   padding:15px;
+   justify-content:center;
+  }
 `
 const Right = styled.div`
  flex :1;
+
 `
 
 const List = styled.ul`
@@ -53,6 +63,12 @@ font-weight:bold;
 color:transparent;
 -webkit-text-stroke:1px #3adba8;
 position:relative;
+
+@media only screen and (max-width:768px) {
+   font-size:30px;
+   color:white;
+  -webkit-text-stroke:0px;
+  }
 
 &:after{
   content:"${(props=> props.text)}";
@@ -81,6 +97,8 @@ position:relative;
 const Works = () => {
 
   const [work,setWork] = useState("Web Design");
+
+  
 
   return (
     <Section >

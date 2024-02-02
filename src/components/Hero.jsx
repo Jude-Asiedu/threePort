@@ -124,7 +124,7 @@ const Hero = () => {
       <Navbar/>
       <Container>
         <Left>
-          <Title>  Design, Innovate, Build, Repeat. </Title>
+          <Title>  Design, Innovate. Build. Repeat. </Title>
             <div>
             <Subtitle>  What I Do ? </Subtitle>
             <Para> Specially focus in web and mobile technnologies</Para>

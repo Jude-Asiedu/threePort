@@ -20,6 +20,10 @@ const Container = styled.div`
 
 const Left = styled.div`
   flex:1 ;
+  @media only screen and (max-width:768px) {
+    display:none;
+   
+  }
 
 `
 const Right = styled.div`
@@ -29,11 +33,19 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 gap:20px;
+
+@media only screen and (max-width:768px) {
+   text-align:center;
+   align-items:center;
+  }
 `
 
 
 const Title = styled.h1`
   font-size:70px;
+  @media only screen and (max-width:768px) {
+   font-size: 58px;
+  }
 `
 
 const Button = styled.button`
@@ -51,6 +63,9 @@ const Para = styled.p`
   color:'light-grey';
   font-size:32px;
   background-color : '#1d483b';
+  @media only screen and (max-width:768px) {
+   font-size:23px;
+  }
 
 `
 

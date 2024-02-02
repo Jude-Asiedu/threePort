@@ -16,6 +16,14 @@ const Desc = styled.div`
   color:black;
   font-size:12px;
   font-weight: 400;
+
+  @media only screen and (max-width:768px) {
+  margin:auto;
+  top:0;
+  right: 0;
+  bottom:0;
+  left:0;
+  }
 `
 
 const ModelWeb = () => {

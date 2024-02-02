@@ -15,7 +15,7 @@ export default function GameModel(props) {
   const { nodes, materials } = useGLTF('/game-transformed.glb')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Cube_0.geometry} material={materials['Material.001']} rotation={[-Math.PI / 9.9, 0, 0]}  scale={0.172} />
+      <mesh geometry={nodes.Cube_0.geometry} material={materials['Material.001']} rotation={[-Math.PI / 1.9, 0, 0]}  scale={0.12} />
     </group>
   )
 }

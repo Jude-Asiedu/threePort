@@ -21,9 +21,17 @@ const Left = styled.div`
   /* background-color:#121212; */
   align-items:center;
   justify-content:flex-end;
+
+  @media only screen and (max-width:768px) {
+   /* padding:40px; */
+   justify-content:center;
+  }
 `
 const Right = styled.div`
   flex:1;
+  @media only screen and (max-width:768px) {
+  display:none;
+  }
 `
 
 const Title = styled.h1`
@@ -36,6 +44,9 @@ display:flex;
 gap:20px;
 flex-direction:column;
 
+@media only screen and (max-width:768px) {
+ width:300px;
+  }
 `
 
 const Input = styled.input`
