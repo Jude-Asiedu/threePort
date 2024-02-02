@@ -21,10 +21,10 @@ function App() {
   return (
   <Container>
         <Hero/>
-        <AboutUs/>  
+        {/* <AboutUs/>  
         <Works/>
-        <Contact/>     
-   </Container>
+        <Contact/>      */}
+  </Container>
   );
 }
 

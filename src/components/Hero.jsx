@@ -4,6 +4,7 @@ import Navbar from './layout/Navbar'
 import Sphere from './modelShapes/Sphere'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls} from '@react-three/drei'
+
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align:center; 
@@ -11,14 +12,25 @@ const Section = styled.div`
   flex-direction:column;
   align-items:center;
   justify-content:space-between;
+ 
+  @media only screen and (max-width:768px) {
+   height:200vh; 
+  }
 `
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-type: center;
   width:1000px;
   display:flex;
   justify-content:space-between;
+
+  @media only screen and (max-width:768px) {
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width: 100%;
+}
 `
 
 
@@ -28,10 +40,19 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   gap:20px;
+
+  @media only screen and (max-width:768px) {
+  flex:1; 
+  align-items: center;
+}
 `
 const Right = styled.div`
-flex:3;
-position:relative;
+  flex:3;
+  position:relative;
+  @media only screen and (max-width:768px) {
+    width:100%;
+    flex:1; 
+  }
 `
 
 const Img = styled.img`
@@ -45,19 +66,35 @@ const Img = styled.img`
   left:0;
   right:0;
   animation: animate 1.8s infinite ease alternate;
-   @keyframes animate{
-    to{
-      transform:translateY(20px)
+
+  @media only screen and (max-width:768px) {
+    width:350px;
+    height:350px;
     }
 
-   }
+  @keyframes animate{
+      to{
+        transform:translateY(20px)
+      }
+    }
   
 `
 
 const Title = styled.h1`
   font-size:70px;
+
+  @media only screen and (max-width:768px) {
+    text-align:center;
+}
 `
 
+const Subtitle = styled.h2`
+  font-size:22px;
+
+  @media only screen and (max-width:768px) {
+    text-align:center;
+    }
+`
 const Button = styled.button`
    color:white;
    background-color : #3adba8;
@@ -73,25 +110,28 @@ const Para = styled.p`
   color:'light-grey';
   font-size:32px;
   background-color : '#1d483b';
+  @media only screen and (max-width:768px) {
+    padding:2px;
+    text-align:center;
+    } 
 
 `
 
 const Hero = () => {
 
   return (
-   <Section>
-     <Navbar/>
+    <Section>
+      <Navbar/>
       <Container>
         <Left>
           <Title>  Design, Innovate, Build, Repeat. </Title>
             <div>
-             <h2 className='mr-2'>  What I Do ? </h2>
+            <Subtitle>  What I Do ? </Subtitle>
             <Para> Specially focus in web and mobile technnologies</Para>
             </div>
           <Button> Learn More </Button>
         </Left>
         <Right>
-          {/* 3D Models bug*/}
           <Canvas>
           <OrbitControls enableZoom={false} autoRotate/>
           <ambientLight intensity={2.2} />
@@ -100,25 +140,8 @@ const Hero = () => {
           </Canvas>
           <Img src="./img/buggy.png"/>
         </Right>
-      </Container>
-   </Section>
-  //   <div className="heroSection" >
-  //     <Navbar/>
-  //    <div className="container">
-  //         <div className='headLeft' >
-  //           <h1> Design, Innovate, Build, Repeat</h1>
-  //           <div className='subImageString'>
-  //             <h2 className='mr-2'>  Who am  I ? </h2>
-  //           </div>
-  //           {/* <p>Specially focus in web and mobile technologies </p> */}
-  //           <button onClick={()=>headOver()}>Read  More </button>
-  //         </div>
-  //         <div className='headRight' >
-  //           <img src={bug} alt="text"   className='hugeImage' width={270}/>
-  //         </div>
-  //    </div>
-  //  </div>
-
+      </Container> 
+    </Section>
   )
 }
 

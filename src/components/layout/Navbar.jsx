@@ -4,6 +4,12 @@ import styled from 'styled-components';
 const Section = styled.div`
  display:flex;
  justify-content:center ;
+
+ @media only screen and (max-width:768px) {
+  
+  width:100% 
+
+ }
 `
 
 const Container = styled.div`
@@ -12,6 +18,10 @@ const Container = styled.div`
  justify-content:space-between;
  align-items:center;
  padding:10px 0px;
+
+ @media only screen and (max-width:768px) {
+  width:100% 
+}
 `
 const Links = styled.div`
   display:flex;
@@ -22,6 +32,10 @@ const List = styled.ul`
  display:flex;
  gap:35px;
  list-style:none;
+
+ @media only screen and (max-width:768px) {
+display:none 
+}
 `
 const Icons = styled.div`
   display:flex;
@@ -59,9 +73,7 @@ const Navbar = () => {
               <List>
                 <ListItem> Home</ListItem>
                 <ListItem> Studio</ListItem>
-                {/* <ListItem> About</ListItem> */}
-                {/* <ListItem> Projects</ListItem> */}
-                <ListItem> Works</ListItem>
+                <ListItem> About</ListItem>
                 <ListItem> Contact </ListItem>
               </List>
             </Links>

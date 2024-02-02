@@ -27,9 +27,11 @@ const ModelWeb = () => {
     </Stage>
     <OrbitControls enableZoom={false} />
     </Canvas>
-    <Desc>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel eveniet officiis vero praesentium aliquid iste iusto iure assumenda doloremque, architecto natus consectetur at, earum eligendi ut dolores perferendis? Non, sint!
-    </Desc>
+    {/* <Desc>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel eveniet officiis
+       vero praesentium aliquid iste iusto iure assumenda doloremque, 
+       architecto natus consectetur at, earum eligendi ut dolores perferendis? Non, sint!
+    </Desc> */}
     </>
   )
 }
